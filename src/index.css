@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-image: url("../public/wallpaper.webp");
+}
+
+.container{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.container .box{
+    width:470px;
+    height:290px;
+    box-shadow: 0px 5px 20px rgb(219, 209, 209,0.7),inset 0 5px 30px #3e6c86;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+}
+
+.container::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(wallpaper.jpg) no-repeat center center/cover;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+}
+
+.button{
+    position: absolute;
+    bottom: 30px;
+}
+
+button{
+    width:150px;
+    border:none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #6497b5;
+    font-size:  17px;
+    padding: 8px 10px;
+    position: relative;
+    margin: 0 auto;
+    color: white;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(100,151,181,0.9) ;
+}
+
+.box {
+    text-align: center;
+}
+
+span {
+    font-size: 20px;
+    margin: 20px;
+    display: block;
+}
+
+p {
+    font-size: 25px;
+    width: 420px;
+    box-sizing: border-box;
+    text-align: center;
+}
