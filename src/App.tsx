@@ -4,7 +4,7 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa"
 
 function App() {
 
-  const [quote, setQuotes] = useState([])
+  const [quote, setQuotes] = useState({ author: '', text: '' });
   const iconStyle = { color: "#6497b5" }
   const newQuote = async () => {
     const random = Math.floor(Math.random() * 16) + 1
